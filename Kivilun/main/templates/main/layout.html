@@ -14,18 +14,19 @@
 <body>
     <aside>
         <img class="fullscreen-img" src="{% static 'main/img/1.png' %}" alt="…">
-        <span class="logo">Ghost</span>
+        <span class="logo">Ставропольские новости</span>
         <h3>Навигация</h3>
         <ul>
             <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i> Главная</li></a>
             <a href="{% url 'about' %}"><li><i class="fa-regular fa-address-card"></i> Про нас</li></a>
             <a href="{% url 'news_home' %}"><li><i class="fa-brands fa-telegram"></i> Новости</li></a>
             <a href=""><li><i class="fa-brands fa-telegram"></i> Контакты</li></a>
-            <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fas fa-plus-circle"></i> Добавить запись </button></li></a>
+            <a href="{% url 'create' %}"><li><button class="btn btn-success"><i class="fas fa-plus-circle"></i> Добавить новость </button></li></a>
         </ul>
     </aside>
-    <main>
+    <main class="content">
         {% block content %}
         {% endblock %}
+    </main>
 </body>
 </html>

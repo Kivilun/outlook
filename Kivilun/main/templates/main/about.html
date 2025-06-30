@@ -1,11 +1,11 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Главная страница{% endblock %}
+{% block title %}О сайте{% endblock %}
 
 {% block content %}
-   <div class="features">
-        <h1>Про нас</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad in nisi eos at dolores ipsum soluta expedita id earum beatae repudiandae enim, corporis placeat facilis iusto aut fugiat? Odit, ea?</p>
-        <button class="btn btn-danger">Просто нажми</button>
+    <div class="features container">
+        <h1>О сайте</h1>
+        <p class="lead">Мы публикуем главные новости и события Ставропольского края. Следите за обновлениями!</p>
+        <a href="{% url 'news_home' %}" class="btn btn-outline-primary">К новостям</a>
     </div>
 {% endblock %}
